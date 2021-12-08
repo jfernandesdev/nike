@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { Container, Title, Caption, Text} from './styles';
-import { Button } from '../../components/Button';
+import { RadioColorPicker } from '../RadioColorPicker';
+import { Button } from '../Button';
+
 import { MdAddShoppingCart } from 'react-icons/md';
 
 interface ProductProps {
@@ -27,11 +29,8 @@ export const ProductInfo: React.FC<ProductProps> = ({product}) => {
       <Title>{product.title}</Title>
       <Caption>{product.caption}</Caption>
       <Text>{product.description}</Text>
-
-      Escolha a cor desejada:
-      {product.variations.map((item, index) => (
-        <a key={index} href={item.colorCode}>{item.colorCode}</a>
-      ))}
+      
+      <RadioColorPicker variations={product.variations}/>
 
       Agora o tamanho:
 
