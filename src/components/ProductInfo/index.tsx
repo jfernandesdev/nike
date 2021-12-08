@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Container, Title, Caption, Text} from './styles';
 import { RadioColorPicker } from '../RadioColorPicker';
+import { RadioSizePicker } from '../RadioSizePicker';
 import { Button } from '../Button';
 
 import { MdAddShoppingCart } from 'react-icons/md';
@@ -29,14 +30,16 @@ export const ProductInfo: React.FC<ProductProps> = ({product}) => {
       <Title>{product.title}</Title>
       <Caption>{product.caption}</Caption>
       <Text>{product.description}</Text>
-      
+
       <RadioColorPicker variations={product.variations}/>
 
-      Agora o tamanho:
+      <RadioSizePicker sizes={product.sizes}/>
+
+      {/* Agora o tamanho:
 
       {product.sizes.map((item, index) => (
         <a key={index}>{item}</a>
-      ))}
+      ))} */}
 
       <Text>{product.price}</Text>
 

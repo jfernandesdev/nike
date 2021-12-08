@@ -12,5 +12,5 @@ export const productItem = {
     { name: 'Blue', urlPhoto: './nike-zoom-blue.png', colorCode: '#2175F5' },
     { name: 'Orange', urlPhoto: './nike-zoom-orange.png', colorCode: '#FF5521' },
   ],
-  sizes: [37,38,39,40,41,42,43,43,44,45]
+  sizes: [37,38,39,40,41,42,43,44,45]
 }
