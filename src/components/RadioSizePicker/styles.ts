@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div``;
 
 export const TitleRadio = styled.h4`
+  margin-top: 15px;
   margin-bottom: 10px;
   font-weight: 600;
 `;
@@ -23,13 +24,14 @@ export const InputRadio = styled.input`
 `;
 
 export const LabelRadio = styled.label`
-  width: 54px;
-  height: 46px;
+  width: 44px;
+  height: 36px;
   margin-right: 10px;
   margin-bottom: 10px;
+  font-size: 13px;
   cursor: pointer;
   transition: transform .2s ease-in-out;
-  border-radius: 15px; 
+  border-radius: 10px; 
   background: #DDDDDD;
   color: #000;
   display: inline-flex;

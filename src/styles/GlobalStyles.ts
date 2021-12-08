@@ -7,4 +7,8 @@ export default createGlobalStyle`
    box-sizing: border-box;
    font-family: 'Poppins', Verdana, Arial, Helvetica, sans-serif;
  }
+
+html, body {
+  overflow: hidden;
+}
 `;
