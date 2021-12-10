@@ -8,13 +8,15 @@ export const Button = styled.button<Props>`
   background: ${props => props.colorPrimary ? props.colorPrimary : '#000' };
   color: #FFF;
   border: 0;
-  padding: 12px 40px;
+  padding: 15px 40px;
   border-radius: 10px;
   font-weight: 500;
   font-size: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 
   > svg {
     font-size: 18px;

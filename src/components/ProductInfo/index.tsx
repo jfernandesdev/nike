@@ -1,17 +1,18 @@
 import React from 'react';
 
 import { 
-  Container, 
-  WrapperImg, 
-  BackgroundColorBannerImg,
-  BackgroundTagNike,
-  ProductImg, 
+  Container,
   WrapperInfos, 
   Title, 
   Caption, 
-  Text
+  Text,
+  WrapperPrice,
+  Price,
+  InstallmentPrice,
+  Separator
 } from './styles';
 
+import { BannerProductImg } from '../BannerProductImg';
 import { RadioColorPicker } from '../RadioColorPicker';
 import { RadioSizePicker } from '../RadioSizePicker';
 import { Button } from '../Button';
@@ -36,14 +37,15 @@ interface ProductProps {
 }
 
 export const ProductInfo: React.FC<ProductProps> = ({product}) => {
+  
   return (
     <Container>
-
-      <WrapperImg>
-        <BackgroundColorBannerImg />
-        <BackgroundTagNike>NIKE</BackgroundTagNike>
-        <ProductImg src={product.variations[0].urlPhoto} alt={product.title} />
-      </WrapperImg>
+     
+      <BannerProductImg
+        bkColor='#F84848'
+        urlPhoto={product.variations[0].urlPhoto}
+        titleProduct={product.title}
+      />
 
       <WrapperInfos>
         <Title>{product.title}</Title>
@@ -52,9 +54,14 @@ export const ProductInfo: React.FC<ProductProps> = ({product}) => {
 
         <RadioColorPicker variations={product.variations}/>
 
+        
         <RadioSizePicker sizes={product.sizes}/>
 
-        <Text>{product.price}</Text>
+        <WrapperPrice>
+          <Price><span>R$</span>{product.price}</Price>
+          <Separator />
+          <InstallmentPrice><span>em até</span> <br />{product.installmentPrice}</InstallmentPrice>
+        </WrapperPrice>
 
         <Button colorPrimary='#F84848'>
           <MdAddShoppingCart />

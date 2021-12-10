@@ -8,35 +8,6 @@ export const Container = styled.div`
   height: 100vh;
 `;
 
-export const WrapperImg = styled.div``;
-
-export const BackgroundColorBannerImg = styled.div`
-  background: #F84848;
-  position: absolute;
-  height: 110%;
-  width: 110%;
-  left: -43%;
-  top: 5%;
-  transform: rotate(60deg);
-  z-index: -1;
-`;
-
-export const BackgroundTagNike = styled.span`
-  position: absolute;
-  transform: rotate(-90deg);
-  font-size: 300px;
-  color: rgba(255, 255, 255, 0.15);
-  font-weight: 900;
-  left: -90px;
-  bottom: 0;
-  top: 5px;
-`;
-
-export const ProductImg = styled.img`
-  width: 100%;
-  transform: rotate(-23.31deg) translateX(-10%);
-`;
-
 export const WrapperInfos = styled.div`
   max-width: 525px;
   padding-top: 40px;
@@ -63,3 +34,38 @@ export const Text = styled.p`
   margin: 20px 0;
 `;
 
+export const WrapperPrice = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid #BCB3B3;
+  padding: 10px 0;
+  margin-top: 10px;
+
+`;
+
+export const Price = styled.h4`
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 27px;
+
+  > span {
+    font-size: 23px;
+    margin-right: 5px;
+  }
+`;
+
+export const InstallmentPrice = styled.p`
+  > span {
+    font-weight: normal;
+  }
+  font-weight: bold;
+  font-size: 18px;
+`;
+
+export const Separator = styled.div`
+  width: 0; 
+  height: 43.5px;
+  border: 0.5px solid #BCB3B3;
+  margin: 0 50px;
+`;
