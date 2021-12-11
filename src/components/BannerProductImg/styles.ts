@@ -20,8 +20,23 @@ export const BackgroundColorBannerImg = styled.div<PropsBk>`
   z-index: -1;
 
   &.animation{
-    animation: 1s height ease-out;
+    animation: 0.5s height ease-in;
   }
+
+  @media(max-width: 768px) {
+    transform: rotate(0);
+    top: 0;
+    left: 0;
+  }
+
+  @media(max-width: 768px) and (orientation: portrait) {
+    height: 45vh;
+  }
+
+  @media(max-width: 768px) and (orientation: landscape) {
+    height: 110vh;
+  }
+
 `;
 
 export const BackgroundTagNike = styled.span`
@@ -40,10 +55,21 @@ export const BackgroundTagNike = styled.span`
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
   cursor: default;
+
+  @media(max-width: 768px) {
+    transform: rotate(0);
+    font-size: 11em;
+    left: -15px;
+    top: 15%;
+  }
 `;
 
 export const ProductImg = styled.img`
   width: 100%;
   transform: rotate(-23.31deg) translateX(-10%);
   transition: .5s;
+
+  @media(max-width: 768px) {
+    transform: rotate(0) translate(-5%, 10px);
+  }
 `;

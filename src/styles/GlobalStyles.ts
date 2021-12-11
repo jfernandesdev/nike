@@ -8,6 +8,7 @@ export default createGlobalStyle`
    font-family: 'Poppins', Verdana, Arial, Helvetica, sans-serif;
  }
 
+ @media(min-width: 769px) {
   html, body {
     overflow: hidden;
   }
@@ -20,4 +21,6 @@ export default createGlobalStyle`
         height: 110%;
     }
   }
+ }
+
 `;

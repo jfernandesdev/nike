@@ -10,7 +10,10 @@ export const Container = styled.div`
   justify-content: space-between;
 
   @media(max-width: 768px) {
+    height: 65px;
     padding: 20px 15px;
+    background: #FFF;
+    z-index: 1;
   }
 `;
 

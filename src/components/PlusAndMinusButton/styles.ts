@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Flex = styled.div`
   display: flex;
   align-items: center;
+
+  @media(max-width: 768px) {
+    margin: 10px 30px 10px 0;
+  }
 `;
 
 export const Button = styled.button`
@@ -21,6 +25,10 @@ export const Button = styled.button`
   :hover {
     background: #000;
     color: #FFF;
+  }
+
+  @media(max-width: 768px) {
+    margin: 0;
   }
 `;
 
