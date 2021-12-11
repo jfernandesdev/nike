@@ -7,14 +7,21 @@ type PropsBk = {
 }
 
 export const BackgroundColorBannerImg = styled.div<PropsBk>`
-  background: ${props => props.bkColor ? props.bkColor : 'black'};
+  background: ${props => props.bkColor ? `linear-gradient(-10deg, ${props.bkColor}, ${props.bkColor} 200%)` : 'black'};
   position: absolute;
   height: 110%;
   width: 110%;
   left: -43%;
   top: 5%;
   transform: rotate(60deg);
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
   z-index: -1;
+
+  &.animation{
+    animation: 1s height ease-out;
+  }
 `;
 
 export const BackgroundTagNike = styled.span`
@@ -38,4 +45,5 @@ export const BackgroundTagNike = styled.span`
 export const ProductImg = styled.img`
   width: 100%;
   transform: rotate(-23.31deg) translateX(-10%);
+  transition: .5s;
 `;

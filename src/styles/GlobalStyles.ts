@@ -8,7 +8,16 @@ export default createGlobalStyle`
    font-family: 'Poppins', Verdana, Arial, Helvetica, sans-serif;
  }
 
-html, body {
-  overflow: hidden;
-}
+  html, body {
+    overflow: hidden;
+  }
+
+  @keyframes height{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 110%;
+    }
+  }
 `;

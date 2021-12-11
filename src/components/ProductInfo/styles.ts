@@ -49,6 +49,7 @@ export const Price = styled.h4`
   font-size: 2em;
   line-height: 27px;
   text-align: center;
+  min-width: 200px;
 
   > span {
     font-size: 18px;
