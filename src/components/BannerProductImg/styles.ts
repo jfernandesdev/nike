@@ -26,6 +26,13 @@ export const BackgroundTagNike = styled.span`
   left: -90px;
   bottom: 0;
   top: 5px;
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+  cursor: default;
 `;
 
 export const ProductImg = styled.img`

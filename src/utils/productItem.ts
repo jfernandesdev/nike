@@ -6,11 +6,11 @@ export const productItem = {
   price: '749,90',
   installmentPrice: '10x de R$ 74,99',
   variations: [
-    { name: 'red', urlPhoto: './nike-zoom-red.png', colorCode: '#F84848' },
-    { name: 'black', urlPhoto: './nike-zoom-black.png', colorCode: '#444444' },
-    { name: 'green', urlPhoto: './nike-zoom-green.png', colorCode: '#29B864' },
-    { name: 'blue', urlPhoto: './nike-zoom-blue.png', colorCode: '#2175F5' },
-    { name: 'orange', urlPhoto: './nike-zoom-orange.png', colorCode: '#FF5521' },
+    { slug: 'red', urlPhoto: './nike-zoom-red.png', colorCode: '#F84848' },
+    { slug: 'black', urlPhoto: './nike-zoom-black.png', colorCode: '#444444' },
+    { slug: 'green', urlPhoto: './nike-zoom-green.png', colorCode: '#29B864' },
+    { slug: 'blue', urlPhoto: './nike-zoom-blue.png', colorCode: '#2175F5' },
+    { slug: 'orange', urlPhoto: './nike-zoom-orange.png', colorCode: '#FF5521' },
   ],
   sizes: [37,38,39,40,41,42,43,44,45]
 }

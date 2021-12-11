@@ -13,11 +13,15 @@ export const GridInputRadioSize = styled.div`
   grid-template-columns: repeat(5, 60px);
 `;
 
-export const InputRadio = styled.input`
+type PropsInputRadio = {
+  colorPrimary?: string;
+}
+
+export const InputRadio = styled.input<PropsInputRadio>`
   display: none;
 
   &:checked + label{
-    background: #F84848;
+    background: ${props => props.colorPrimary ? props.colorPrimary : '#000'};
     color: #FFF;
     font-weight: bold;
   }

@@ -1,39 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, TitleRadio, LabelRadio, InputRadio } from './styles';
+
+import { useFormCartContext } from '../../contexts/FormCartContext';
 
 type PropsRadio = {
   colorSelect?: string;
   variations: {
-    name: string;
+    slug: string;
     colorCode: string;
   }[]
 }
 
 export const RadioColorPicker: React.FC<PropsRadio> = ({variations}) => {
-  const [color, setColor] = useState('#F84848');
+  const { color, setColor } = useFormCartContext();
 
   return (
     <Container>
       <TitleRadio>Escolha a cor desejada:</TitleRadio>
 
       {variations.map((item, index) => (
-        <>
-          <InputRadio 
-            key={index}
+        <React.Fragment key={index}>
+          <InputRadio
             type="radio" 
             name="productColor" 
-            id={item.colorCode}
-            value={item.colorCode} 
-            colorCode={color}
+            id={item.slug}
+            value={item.slug} 
+            colorCode={item.colorCode}
             onChange={event => setColor(event.target.value)}
-            checked={item.colorCode === color}
+            checked={item.slug === color}
+            required
           />
           <LabelRadio 
-            htmlFor={item.colorCode} 
+            htmlFor={item.slug} 
             colorCode={item.colorCode} 
-            title={item.name}
+            title={item.slug}
           />
-        </>
+        </React.Fragment>
       ))}
     </Container>
   );
