@@ -23,9 +23,17 @@ O projeto trata-se de uma página (front-end) que simula uma loja online para ad
 
 Layout disponível no Figma: https://www.figma.com/file/2DVI2TKIKprZzqd3blK5aV/nike-zoom
 
-### Desktop (screenshot):
+### Desktop:
+
+| Login  | Register |
+| --- | --- |
+| <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/desktop-1.png" /> | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/desktop-2.png" /> |
 
 ### Mobile (screenshot):
+
+| Login| Register | Reset Password |
+| --- | --- | --- |
+| <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/mobile-1.png" width='300px' /> | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/mobile-2.png" width='300px' /> | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/mobile-3.png" width='300px' /> |
 
 ### Dê uma olhada como o projeto ficou! 👀
 
