@@ -48,19 +48,17 @@ export const Price = styled.h4`
   font-weight: 900;
   font-size: 2em;
   line-height: 27px;
+  text-align: center;
 
   > span {
-    font-size: 23px;
-    margin-right: 5px;
+    font-size: 18px;
   }
 `;
 
 export const InstallmentPrice = styled.p`
-  > span {
-    font-weight: normal;
-  }
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 100;
+  font-size: 13px;
+  color: #444444;
 `;
 
 export const Separator = styled.div`
