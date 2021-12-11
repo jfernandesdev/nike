@@ -58,8 +58,8 @@ export const BackgroundTagNike = styled.span`
 
   @media(max-width: 768px) {
     transform: rotate(0);
-    font-size: 11em;
-    left: -15px;
+    font-size: 10rem;
+    left: -5px;
     top: 15%;
   }
 `;
