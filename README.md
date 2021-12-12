@@ -1,4 +1,4 @@
-# Nike Zoom <img src='https://github.com/jfernandesdev/nike/blob/bbf6dc4bcd69cc1e0ab5df30bde17f168d3a81fe/public/favicon.png' width='27px' />
+# Nike Zoom <img src='https://i.pinimg.com/originals/f5/fd/28/f5fd28c8d4988f0d7a254853b83b5ca4.png' width='50px' />
 
 Projeto Web fictício desenvolvido para fins didáticos. TEMA: "Nike Zoom" 👟🏀
 
@@ -25,19 +25,19 @@ Layout disponível no Figma: https://www.figma.com/file/2DVI2TKIKprZzqd3blK5aV/n
 
 ### Desktop:
 
-| Login  | Register |
+|   |  |
 | --- | --- |
 | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/desktop-1.png" /> | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/desktop-2.png" /> |
 
 ### Mobile (screenshot):
 
-| Login| Register | Reset Password |
+| |  |  |
 | --- | --- | --- |
 | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/mobile-1.png" width='300px' /> | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/mobile-2.png" width='300px' /> | <img src="https://github.com/jfernandesdev/nike/blob/56fce4b1780b2303c52323eae73b79315c4ff25c/public/layout/mobile-3.png" width='300px' /> |
 
 ### Dê uma olhada como o projeto ficou! 👀
 
-(Em breve ...)
+https://nike-jfernandesdev.netlify.app/
 
 <br>
 
