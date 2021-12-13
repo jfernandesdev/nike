@@ -19,6 +19,9 @@ export const WrapperInfos = styled.div`
   margin-top: 40px;
   padding: 10px;
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media(min-width: 768px) {
     overflow-y: scroll;

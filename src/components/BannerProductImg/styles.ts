@@ -36,7 +36,6 @@ export const BackgroundColorBannerImg = styled.div<PropsBk>`
   @media(max-width: 768px) and (orientation: landscape) {
     height: 110vh;
   }
-
 `;
 
 export const BackgroundTagNike = styled.span`
@@ -67,7 +66,7 @@ export const BackgroundTagNike = styled.span`
 export const ProductImg = styled.img`
   width: 100%;
   transform: rotate(-23.31deg) translateX(-10%);
-  transition: .5s;
+  transition: .5s ease-in-out;
 
   @media(max-width: 768px) {
     transform: rotate(0) translate(-5%, 10px);

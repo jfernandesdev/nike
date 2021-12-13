@@ -41,7 +41,8 @@ export const PlusAndMinusButton: React.FC = () => {
         name="productQuant"
         min={1}
         max={99}
-        value={currentQuantity}
+        step={1}
+        value={Math.round(currentQuantity)}
         onChange={handleCurrentQuantChange}
       />
 

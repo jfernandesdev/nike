@@ -8,6 +8,10 @@ export default createGlobalStyle`
    font-family: 'Poppins', Verdana, Arial, Helvetica, sans-serif;
  }
 
+ body {
+    overflow-x: hidden;
+  }
+
  @media(min-width: 769px) {
   html, body {
     overflow: hidden;
